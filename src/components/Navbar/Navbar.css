@@ -1,0 +1,60 @@
+.navbar_container{
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    z-index: 10;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 7%;
+}
+
+.navbar_left{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+    margin-left: 30px;
+}
+
+.navbar_left>img{
+    width: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar_left>input{
+    border: none;
+    width: 390px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.navbar_right{
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0.9;
+}
+
+.navbar_right>p{
+    cursor: pointer;
+    color: rgb(0, 71, 171);
+}
+
+.navbar_right>button{
+    cursor: pointer;
+    background-color: rgb(0, 71, 171);
+    color: whitesmoke;
+    border: none;
+    padding: 14px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.navbar_line{
+    border: 0.5px solid lightgrey;
+}

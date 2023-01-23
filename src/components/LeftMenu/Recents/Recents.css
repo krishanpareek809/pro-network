@@ -1,0 +1,25 @@
+.recents_container{
+    width: 240px;
+    height: 205px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.recents_title{
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+.recents_tags_container{
+    margin-left: 35px;
+    font-size: 14px;
+    color: grey;
+    font-weight: 600;
+}
+
+.recents_tags_container>p{
+    cursor: pointer;
+}
