@@ -1,6 +1,7 @@
 import React from "react";
+import "./RightMenu.css";
 
-function RightMenu(){
+function RightMenu() {
     const news = [
         {
             id: 1,
@@ -44,12 +45,14 @@ function RightMenu(){
         },
     ];
 
-    return(
-        <div>
-            <p>Pro Network News</p>
+    return (
+        <div className="right_menu_container">
+            <p className="right_menu_title">Pro Network News</p>
             <ul>
                 {news.map((value) => (
-                    <li>{value.title}</li>
+                    <li className="right_menu_news_title">
+                        {value.title.slice(0, 20)}...
+                    </li>
                 ))}
             </ul>
         </div>

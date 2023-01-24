@@ -7,6 +7,7 @@ function Homepage(){
     return(
         <div className="homepage_container">
             <LeftMenu />
+            <div></div>
             <RightMenu />
         </div>
     );
