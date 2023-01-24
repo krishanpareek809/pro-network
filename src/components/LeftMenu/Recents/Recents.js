@@ -24,7 +24,7 @@ function Recents() {
             tag: "developer",
         },
     ];
-    
+
     return (
         <div className="recents_container">
             <p className="recents_title">Recent</p>

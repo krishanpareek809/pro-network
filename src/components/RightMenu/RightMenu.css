@@ -4,4 +4,16 @@
     border-radius: 12px;
     padding: 0 10px;
     /* height: 400px; */
+    position: sticky;
+    top: 75px;
+}
+
+.right_menu_title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.right_menu_news_title{
+    margin-top: 20px;
+    cursor: pointer;
 }

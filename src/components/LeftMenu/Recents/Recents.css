@@ -1,6 +1,6 @@
 .recents_container{
-    width: 240px;
-    height: 205px;
+    padding: 1px 10px;
+    margin-top: 10px;
     border-radius: 12px;
     background-color: white;
 }
@@ -8,8 +8,6 @@
 .recents_title{
     font-size: 14px;
     font-weight: 600;
-    padding-left: 10px;
-    padding-top: 10px; 
 }
 
 .recents_tags_container{

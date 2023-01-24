@@ -7,7 +7,6 @@ function App() { // doubt in UserDetails.css (.user_details_div)
     <div>
       <Navbar />
       <Homepage />
-
     </div>
   );
 }
