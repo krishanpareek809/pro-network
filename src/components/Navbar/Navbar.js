@@ -1,7 +1,10 @@
 import React from "react";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+    const navigate = useNavigate();
+
     return (
         <div className="navbar_container">
             <div className="navbar">
@@ -12,14 +15,14 @@ function Navbar() {
 
                 <div className="navbar_right">
                     <p>HI, USER</p>
-                    <p>HOME</p>
-                    <p>ABOUT US</p>
-                    <p>PROFILE</p>
+                    <p onClick={() => navigate("/")}>HOME</p>
+                    <p onClick={() => navigate("/about-us")}>ABOUT US</p>
+                    <p onClick={() => navigate("/profile")}>PROFILE</p>
                     <p>DARK MODE</p>
                     <button>LOGOUT</button>
                 </div>
             </div>
-            <hr className="navbar_line"/>
+            <hr className="navbar_line" />
         </div>
     );
 }

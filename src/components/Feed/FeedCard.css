@@ -1,0 +1,49 @@
+.feed_card_container {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.feed_card_title {
+    display: flex;
+    align-items: center;
+}
+
+.feed_card_title_text {
+    margin-left: 15px;
+}
+
+.feed_card_title_text_name {
+    font-weight: 600;
+}
+
+.feed_card_title_text_username {
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: 5px;
+}
+
+.tags {
+    display: flex;
+    margin-left: -5px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons>p {
+    margin-left: 8px;
+}
+
+.icons_container {
+    display: flex;
+    align-items: center;
+}
+
+.bookmark_icon {
+    margin-left: 15px;
+}
