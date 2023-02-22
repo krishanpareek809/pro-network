@@ -2,6 +2,7 @@
     width: 240px;
     background-color: white;
     border-radius: 12px;
+    border: 1px solid lightgrey;
     padding: 0 10px;
     height: 370px;
     position: sticky;
@@ -16,4 +17,10 @@
 .right_menu_news_title{
     margin-top: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .right_menu_container{
+        display: none;
+    }
 }

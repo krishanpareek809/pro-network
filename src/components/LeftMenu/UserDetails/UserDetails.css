@@ -1,6 +1,7 @@
 .user_details_container{
     width: 240px;
     border-radius: 12px;
+    border: 1px solid lightgrey;
     background-color: white;
 }
 
@@ -53,4 +54,28 @@
 
 .user_details_stats_2{
     margin-top: -15px;
+}
+
+@media screen and (max-width: 700px) {
+    .user_details_container{
+        width: 200px;
+    }
+
+    .user_details_background_image>img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .user_details_container{
+        width: 170px;
+    }
+
+    .user_details_background_image>img{
+        width: 170px;
+    }
+
+    .user_details_div_mail{
+        margin-left: -6px;
+    }
 }

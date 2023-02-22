@@ -3,3 +3,13 @@
     position: sticky;
     top: 85px;
 }
+
+@media screen and (max-width: 500px) {
+    .left_menu_container{
+        position: static;
+        display: flex;
+        justify-content: center;
+        height: 255px;
+        margin: 15px 0;
+    }
+}

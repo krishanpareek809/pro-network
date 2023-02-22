@@ -1,30 +1,30 @@
-.navbar_container{
+.navbar_container {
     position: sticky;
     top: 0;
     background-color: whitesmoke;
     z-index: 10;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 6px 7%;
 }
 
-.navbar_left{
+.navbar_left {
     display: flex;
     align-items: center;
     flex: 0.4;
 }
 
-.navbar_left>img{
+.navbar_left>img {
     width: 45px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-.navbar_left>input{
+.navbar_left>input {
     border: none;
     width: 390px;
     height: 30px;
@@ -32,28 +32,60 @@
     padding: 0 10px;
 }
 
-.navbar_right{
+.navbar_right {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex: 0.9;
 }
 
-.navbar_right>p{
+.navbar_right>p {
     cursor: pointer;
     color: rgb(0, 71, 171);
+    font-size: 14px;
 }
 
-.navbar_right>button{
+.navbar_right>button {
     cursor: pointer;
     background-color: rgb(0, 71, 171);
     color: whitesmoke;
     border: none;
-    padding: 14px 15px;
-    font-size: 16px;
+    padding: 12px 12px;
+    font-size: 14px;
     border-radius: 4px;
 }
 
-.navbar_line{
+.navbar_line {
     border: 0.5px solid lightgrey;
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar_right>p {
+        font-size: 12px;
+    }
+
+    .navbar_right>button {
+        font-size: 10px;
+        padding: 8px 8px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar_right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar_left>input{
+        width: 70%;
+    }
 }

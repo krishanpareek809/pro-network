@@ -1,5 +1,25 @@
 .homepage_container{
     display: flex;
     justify-content: space-between;
-    padding: 5px 7%;
+    padding: 11px 7%;
+}
+
+.homepage_container_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .homepage_container{
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homepage_container{
+        display: none;
+    }
+
+    .homepage_container_mobile{
+        display: block;
+    }
 }
