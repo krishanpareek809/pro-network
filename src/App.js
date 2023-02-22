@@ -6,6 +6,8 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Profile from "./pages/Profile/Profile";
 
 function App() {
+  console.log(`Secret value is: ${process.env.REACT_APP_SECRET_VALUE}`);
+  console.log(`Secret value 2 is: ${process.env.REACT_APP_SECRET_VALUE2}`);
   return (
     <div className="App">
       <BrowserRouter>
