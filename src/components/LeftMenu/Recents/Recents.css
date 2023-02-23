@@ -39,8 +39,7 @@
 
 @media screen and (max-width: 430px) {
     .recents_container{
-        width: 150px;
-        margin-right: -8px;
+        width: 147px;
     }
 
     .recents_tags_container{
