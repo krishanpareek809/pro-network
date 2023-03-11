@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Homepage from './pages/Homepage/Homepage';
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Profile from "./pages/Profile/Profile";
+import FeedDescriptionPage from "./pages/FeedDescriptionPage/FeedDescriptionPage";
 
 function App() {
   console.log(`Secret value is: ${process.env.REACT_APP_SECRET_VALUE}`);
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" element={<Homepage />} />
           <Route exact path="/about-us" element={<AboutUs />} />
           <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/feed-description/:id" element={<FeedDescriptionPage />} />
         </Routes>
       </BrowserRouter>
     </div>
