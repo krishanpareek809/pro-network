@@ -48,3 +48,13 @@
 .bookmark_icon {
     margin-left: 15px;
 }
+
+.feed_card_image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed_card_image_container>img{
+    width: 100%;
+}

@@ -19,7 +19,6 @@ function FeedDescription() {
     
     return (
         <div>
-            <h1>rtfhtg</h1>
             <div>{feedData?.title}</div>
             <div>{feedData?.body}</div>
             <div>{feedData?.reactions}</div>
