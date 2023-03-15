@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ setIsLoggedIn }) {
     const navigate = useNavigate();
 
     return (
@@ -19,7 +19,7 @@ function Navbar() {
                     <p onClick={() => navigate("/about-us")}>ABOUT US</p>
                     <p onClick={() => navigate("/profile")}>PROFILE</p>
                     <p>DARK MODE</p>
-                    <button>LOGOUT</button>
+                    <button onClick={() => setIsLoggedIn(false)}>LOGOUT</button>
                 </div>
             </div>
             <hr className="navbar_line" />
