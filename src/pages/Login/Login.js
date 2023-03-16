@@ -19,7 +19,7 @@ function Login({ setLoggedIn }) {
                 localStorage.setItem("isUserLoggedIn", true);
                 setLoggedIn(true);
             } else {
-                console.log("email or password is incorrect");
+                alert("Email or password is incorrect");
             }
         }
     }
@@ -56,7 +56,7 @@ function Login({ setLoggedIn }) {
             </div>
 
             <button onClick={login}>Login</button>
-            
+
             <div className="sign_up_button">
                 <p>Visiting for the first time?</p>
                 <button onClick={signUp}>Sign Up</button>

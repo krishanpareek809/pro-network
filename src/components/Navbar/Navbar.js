@@ -5,9 +5,6 @@ import { useNavigate } from "react-router-dom";
 function Navbar({ setIsLoggedIn }) {
     const navigate = useNavigate();
 
-    const value = localStorage.getItem("email");
-    console.log("value", value);
-    
     function logout(){
         setIsLoggedIn(false);
         localStorage.setItem("isUserLoggedIn", false);
