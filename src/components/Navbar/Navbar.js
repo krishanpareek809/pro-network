@@ -5,6 +5,14 @@ import { useNavigate } from "react-router-dom";
 function Navbar({ setIsLoggedIn }) {
     const navigate = useNavigate();
 
+    const value = localStorage.getItem("email");
+    console.log("value", value);
+    
+    function logout(){
+        setIsLoggedIn(false);
+        localStorage.setItem("isUserLoggedIn", false);
+    }
+
     return (
         <div className="navbar_container">
             <div className="navbar">
@@ -19,7 +27,7 @@ function Navbar({ setIsLoggedIn }) {
                     <p onClick={() => navigate("/about-us")}>ABOUT US</p>
                     <p onClick={() => navigate("/profile")}>PROFILE</p>
                     <p>DARK MODE</p>
-                    <button onClick={() => setIsLoggedIn(false)}>LOGOUT</button>
+                    <button onClick={logout}>LOGOUT</button>
                 </div>
             </div>
             <hr className="navbar_line" />
