@@ -17,7 +17,7 @@
 .feed_add_input{
     display: flex;
     padding-top: 20px;
-    width: 100%;
+    width: 80%;
     align-items: center;
     justify-content: center;
 }

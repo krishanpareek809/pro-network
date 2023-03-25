@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         {isLoggedIn ? (
-          <div >
+          <div>
             <Navbar setIsLoggedIn={setIsLoggedIn} />
             <Routes>
               <Route exact path="/" element={<Homepage />} />
