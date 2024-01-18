@@ -9,6 +9,10 @@
     top: 85px;
 }
 
+.right_menu_container>ul{
+    padding-left: 12px;
+}
+
 .right_menu_title{
     font-weight: bold;
     font-size: 18px;

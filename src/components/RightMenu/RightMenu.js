@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./RightMenu.css";
+import axios from "axios";
+import API_KEY from "./keys";
 
 function RightMenu() {
+    /*
     const news = [
         {
             id: 1,
@@ -44,19 +47,54 @@ function RightMenu() {
             link: "",
         },
     ];
+    */
+    
 
+    const [newsItem, setNewsItem] = useState([]);
+    
+    const newsApi = async() => {
+        try{
+            const news = await axios.get(`https://newsapi.in/newsapi/news.php?key=${API_KEY}&category=india_english_world`);
+            setNewsItem(news.data.News);
+        } catch(error){
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        newsApi();
+    }, []);
+
+    const news = (headlines, link) => (
+		<a style={{ textDecoration: "none" }} href={link} target="_blank">
+			<div className="widgets">
+				<div className="widgets_right">
+					<p className="truncate">{headlines}</p>
+				</div>
+			</div>
+		</a>
+	);
     return (
         <div className="right_menu_container">
             <p className="right_menu_title">Pro Network News</p>
             <ul>
-                {news.map((value) => (
+                {/* {news.map((value) => (
                     <li className="right_menu_news_title">
                         {value.title.slice(0, 20)}...
                     </li>
-                ))}
+                ))} */}
+                {/* {newsItem?.map((value) => (
+                    <li className="right_menu_news_title">
+                       { value.title.splice(0, 20)}...
+                    </li>
+                ))} */}
+                {newsItem?.splice(0,9).map((value, index) => (
+				<div key={index} className="single-news">
+					{news(value?.title.slice(0,27), value?.url)}
+				</div>
+			    ))}
             </ul>
         </div>
-    )
+    );
 }
-
 export default RightMenu;
