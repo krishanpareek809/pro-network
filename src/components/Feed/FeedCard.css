@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .icons>p {
@@ -45,8 +46,8 @@
     align-items: center;
 }
 
-.bookmark_icon {
-    margin-left: 15px;
+.views_icon{
+    margin-left: 246px;
 }
 
 .feed_card_image_container{

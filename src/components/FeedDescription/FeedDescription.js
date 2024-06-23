@@ -19,9 +19,12 @@ function FeedDescription() {
     
     return (
         <div>
+            <div>{feedData?.userId}</div>
             <div>{feedData?.title}</div>
             <div>{feedData?.body}</div>
-            <div>{feedData?.reactions}</div>
+            <div>{feedData?.reactions.likes}</div>
+            <div>{feedData?.reactions.dislikes}</div>
+            <div>{feedData?.views}</div>
         </div>
     );
 }

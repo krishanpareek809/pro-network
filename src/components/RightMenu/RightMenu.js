@@ -89,9 +89,9 @@ function RightMenu() {
                     </li>
                 ))} */}
                 {newsItem?.splice(0,9).map((value, index) => (
-				<div key={index} className="single-news">
-					{news(value?.title.slice(0,27), value?.url)}
-				</div>
+				    <li key={index} className="single-news">
+					    {news(value?.title.slice(0,27), value?.url)}
+				    </li>
 			    ))}
             </ul>
         </div>

@@ -24,9 +24,14 @@ function Feed() {
             userId: 10,              // .push = push element at last of the array
             id: posts.length + 1,
             name: "Krishan",
-            tags: ["HTML", "CSS"],
+            tags: ["software", "engineer"],
             body: input,
             image: imageUrl,
+            reactions: {
+                "likes": "",
+                "dislikes": ""
+              },
+            views: ""
         });
         setPosts(copyArray);
         setInput("");   // render again to get data 
@@ -64,7 +69,9 @@ function Feed() {
                     name={value.name}
                     tags={value.tags}
                     message={value.body}
-                    likeCount={value.reactions}
+                    likeCount={value.reactions.likes}
+                    dislikeCount={value.reactions.dislikes}
+                    views={value.views}
                 />
             ))}
         </div>
